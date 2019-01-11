@@ -1,0 +1,61 @@
+:root{
+  --color:hsla(0, 0%, 0%, 0.7);
+  --bg:url('https://images.pexels.com/photos/209982/pexels-photo-209982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  --color2:'';
+  /* setting up my global style with css variable */
+}
+*{
+  padding:0;
+  margin:0;
+  /* setting the default of document */
+}
+body{
+  background-image: var(--bg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* styling body background:  */
+}
+  #container{
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    top:0px;
+    background-color: var(--color);
+    /* styling container */
+
+  }
+  #inputcontainer{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ddd;
+    top:10%;
+    left:50%;
+    width:40%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 8px;
+    /* styling inputcontainer and centering it on the page*/
+  }
+  #inputcontainer p{
+    width:100%;
+    margin-top: 20px;
+    padding: 8px;
+      box-sizing: border-box;
+  }
+  #inputcontainer p #i{
+    width:100%;
+    height: 100%;
+    padding: 8px;
+      box-sizing: border-box;
+      /* styling the input */
+  }
+  #result{
+    color:var(--color2);
+    font-family: verdana;
+    text-align: left;
+    /* styling the output */
+  }
